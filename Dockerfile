@@ -15,7 +15,6 @@ RUN apt-get update && \
         libmemcached-dev \
         libcurl4-openssl-dev \
         libssl-dev \
-        php-pear \
         curl \
         ssmtp \
         mysql-client \
