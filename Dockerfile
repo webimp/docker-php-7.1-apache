@@ -26,7 +26,7 @@ RUN apt-get update && \
         openssh-client \
         wget && \
     rm -rf /var/lib/apt/lists/* && \
-    wget https://getcomposer.org/download/1.6.2/composer.phar -O /usr/local/bin/composer && \
+    wget https://getcomposer.org/download/1.6.3/composer.phar -O /usr/local/bin/composer && \
     chmod a+rx /usr/local/bin/composer
 
 RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h && \
