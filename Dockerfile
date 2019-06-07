@@ -26,7 +26,7 @@ RUN apt-get update && \
         openssh-client \
         wget && \
     rm -rf /var/lib/apt/lists/* && \
-    wget https://getcomposer.org/download/1.6.3/composer.phar -O /usr/local/bin/composer && \
+    wget https://getcomposer.org/download/1.8.5/composer.phar -O /usr/local/bin/composer && \
     chmod a+rx /usr/local/bin/composer
 
 RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h && \
@@ -47,6 +47,5 @@ RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h && \
     docker-php-ext-install pcntl && \
     docker-php-ext-install ftp && \
     docker-php-ext-install sockets && \
-    pecl install memcached-2.2.0 && \
     pecl install redis && \
     pecl install xdebug
